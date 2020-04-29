@@ -11,6 +11,7 @@ import MainLayout from "../layouts/mainLayout"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
+import Spinner from "../components/spinner/Spinner"
 
 // Components
 import HeaderNoBtn from "../components/HeaderNoBtn"
@@ -93,7 +94,7 @@ class NoticiasPage extends React.Component {
                                     <h2>Noticias Recientes</h2>
                                     <Input type="text" aria-label="Buscar" onChange={this.handleSearch.bind(this)} placeholder="Buscar Noticias" />
                                 </div>
-                                {this.state.loading ? <p>Cargando...</p> :
+                                {this.state.loading ? <Spinner></Spinner> :
 
                                     articles.map(article => {
                                         return <div

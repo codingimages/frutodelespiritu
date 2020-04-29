@@ -7,7 +7,6 @@ const MetaTags = ({ title }) => {
         <Helmet>
             <title>{title}</title>
             <link href="https://fonts.googleapis.com/css?family=Delius+Unicase:700|Rubik&display=swap" rel="stylesheet" />
-
         </Helmet>
     )
 }
