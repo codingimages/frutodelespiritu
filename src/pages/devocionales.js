@@ -25,7 +25,6 @@ import MainLayout from "../layouts/mainLayout"
 import styled from "@emotion/styled"
 
 const Input = styled.input`
-    margin-left: auto;
     height: calc(1.5em + .75rem + 1.5px);
     padding: .375rem .75rem;
     border: 1px solid #ced4da;
@@ -71,7 +70,7 @@ const DevocionalesPage = () => {
                 <Container className="py-5">
                     <Row>
                         <Col sm={12} lg={8}>
-                            <div className="d-flex align-items-center justify-content-between">
+                            <div className="d-flex align-items-center justify-content-between flex-wrap">
                                 <h2>Temas Devocionales</h2>
                                 <Input type="text" aria-label="Buscar" onChange={handleBuscar} placeholder="Buscar Devocionales" />
                             </div>
@@ -96,7 +95,7 @@ const DevocionalesPage = () => {
                                                 <Moment fromNow>{devocional.date}</Moment>
                                             </div>
                                         </div>
-                                        <p className="text-dark my-2" dangerouslySetInnerHTML={{ __html: devocional.excerpt }}></p>
+                                        <div className="text-dark my-2" dangerouslySetInnerHTML={{ __html: devocional.excerpt }}></div>
                                     </Link>
                                 </div>
                             })}

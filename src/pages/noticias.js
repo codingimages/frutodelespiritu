@@ -23,7 +23,6 @@ import RecentPosts from "../components/recentPosts"
 import styled from "@emotion/styled"
 
 const Input = styled.input`
-    margin-left: auto;
     height: calc(1.5em + .75rem + 1.5px);
     padding: .375rem .75rem;
     border: 1px solid #ced4da;
@@ -90,7 +89,7 @@ class NoticiasPage extends React.Component {
 
                             {/* Content */}
                             <Col sm={12} lg={8}>
-                                <div className="d-flex align-items-center justify-content-between">
+                                <div className="d-flex align-items-center justify-content-between flex-wrap">
                                     <h2>Noticias Recientes</h2>
                                     <Input type="text" aria-label="Buscar" onChange={this.handleSearch.bind(this)} placeholder="Buscar Noticias" />
                                 </div>
@@ -119,7 +118,7 @@ class NoticiasPage extends React.Component {
                                                         <Moment fromNow>{article.publishedAt}</Moment>
                                                     </div>
                                                 </div>
-                                                <p className="text-dark my-2" dangerouslySetInnerHTML={{ __html: article.description }}></p>
+                                                <div className="text-dark my-2" dangerouslySetInnerHTML={{ __html: article.description }}></div>
                                             </a>
                                         </div>
                                     })}

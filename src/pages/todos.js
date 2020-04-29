@@ -24,7 +24,6 @@ import MainLayout from "../layouts/mainLayout"
 import styled from "@emotion/styled"
 
 const Input = styled.input`
-    margin-left: auto;
     height: calc(1.5em + .75rem + 1.5px);
     padding: .375rem .75rem;
     border: 1px solid #ced4da;
@@ -75,7 +74,7 @@ const TodosPages = () => {
                 <Container className="py-5">
                     <Row>
                         <Col sm={12} lg={8}>
-                            <div className="d-flex align-items-center justify-content-between">
+                            <div className="d-flex align-items-center justify-content-between flex-wrap">
                                 <h2>Todas las entradas</h2>
                                 <Input type="text" aria-label="Buscar" onChange={handleBuscar} placeholder="Buscar Escritos" />
                             </div>
@@ -88,10 +87,13 @@ const TodosPages = () => {
                                         className="text-decoration-none"
                                         to={`/post/${post.title}`}
                                     >
-                                        <div className="d-flex align-items-center justify-content-between">
-                                            <h2>{post.title}</h2>
-                                            <p className="mb-0 bg-primary text-light p-2 rounded">{post.categories}
+                                        <div className="d-flex align-items-start flex-column">
+                                            <p style={{
+                                                fontSize: 12
+                                            }}
+                                                className="mb-1 bg-primary text-light p-2 rounded">{post.categories}
                                             </p>
+                                            <h2>{post.title}</h2>
                                         </div>
                                         <div className="d-flex text-dark">
                                             <div className="d-flex align-items-center mr-3">
@@ -104,7 +106,7 @@ const TodosPages = () => {
                                                 <Moment fromNow>{post.date}</Moment>
                                             </div>
                                         </div>
-                                        <p className="text-dark my-2" dangerouslySetInnerHTML={{ __html: post.excerpt }}></p>
+                                        <div className="text-dark my-2" dangerouslySetInnerHTML={{ __html: post.excerpt }}></div>
                                     </Link>
                                 </div>
                             })}
