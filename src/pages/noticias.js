@@ -46,7 +46,7 @@ class NoticiasPage extends React.Component {
     }
 
     componentDidMount() {
-        fetch('http://newsapi.org/v2/everything?qInTitle=cristianos&language=es&apiKey=bc9471b0c90c4d1a8d41860292e59d6b')
+        fetch('https://newsapi.org/v2/everything?qInTitle=cristianos&language=es&apiKey=bc9471b0c90c4d1a8d41860292e59d6b')
             .then((response) => {
                 return response.json();
             })
