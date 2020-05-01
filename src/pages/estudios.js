@@ -25,6 +25,8 @@ import styled from "@emotion/styled"
 
 const Input = styled.input`
     height: calc(1.5em + .75rem + 1.5px);
+    width: 75%;
+    margin: 0 auto 1rem;
     padding: .375rem .75rem;
     border: 1px solid #ced4da;
     border-radius: .25rem;
@@ -69,7 +71,7 @@ const EstudiosPage = () => {
                         {/* Content */}
                         <Col sm={12} lg={8}>
                             <div className="d-flex align-items-center justify-content-between flex-wrap">
-                                <h2>Elige un tema</h2>
+                                <h2 className="mx-auto">Elige un tema</h2>
                                 <Input type="text" aria-label="Buscar" onChange={handleBuscar} placeholder="Buscar Estudios" />
                             </div>
                             {estudios.map(post => {

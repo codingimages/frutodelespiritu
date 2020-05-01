@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 // Icons
-import { FaCross, FaBookMedical, FaPray, FaNewspaper, FaQuestionCircle } from "react-icons/fa"
+import { FaCross, FaBookMedical, FaPray, FaQuestionCircle, FaHome } from "react-icons/fa"
 
 // Logo
 import Logo from "../images/logo.png"
@@ -30,7 +30,14 @@ const Navigation = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
                         <Link
-                            className="nav-link my-3 ml-1 mr-3 mx-auto"
+                            className="nav-link my-3 ml-1 mr-3 mx-auto align-items-center justify-content-center d-flex"
+                            activeClassName="active"
+                            to="/">
+                            <FaHome className="mr-1" />
+                            Inicio
+                        </Link>
+                        <Link
+                            className="nav-link my-3 ml-1 mr-3 mx-auto align-items-center justify-content-center d-flex"
                             activeClassName="active"
                             to="/jesus">
                             <FaCross className="mr-1" />
@@ -38,7 +45,7 @@ const Navigation = () => {
                         </Link>
 
                         <Link
-                            className="nav-link my-3 ml-1 mr-3 mx-auto"
+                            className="nav-link my-3 ml-1 mr-3 mx-auto align-items-center justify-content-center d-flex"
                             activeClassName="active"
                             to="/estudios">
                             <FaBookMedical className="mr-1" />
@@ -46,20 +53,20 @@ const Navigation = () => {
                         </Link>
 
                         <Link
-                            className="nav-link my-3 ml-1 mr-3 mx-auto"
+                            className="nav-link my-3 ml-1 mr-3 mx-auto align-items-center justify-content-center d-flex align-items-center justify-content-center d-flex"
                             activeClassName="active"
                             to="/devocionales">
                             <FaPray className="mr-1" />
-                            Devocionales
+                            Reflexiones
                         </Link>
 
-                        <Link
+                        {/* <Link
                             className="nav-link my-3 ml-1 mr-3 mx-auto"
                             activeClassName="active"
                             to="/noticias">
                             <FaNewspaper className="mr-1" />
                             Noticias
-                        </Link>
+                        </Link> */}
 
                         <Link
                             className="nav-link my-3 ml-1 mr-3 mx-auto"

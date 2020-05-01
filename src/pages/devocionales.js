@@ -26,6 +26,8 @@ import styled from "@emotion/styled"
 
 const Input = styled.input`
     height: calc(1.5em + .75rem + 1.5px);
+    width: 75%;
+    margin: 0 auto 1rem;
     padding: .375rem .75rem;
     border: 1px solid #ced4da;
     border-radius: .25rem;
@@ -64,15 +66,15 @@ const DevocionalesPage = () => {
             <MetaTags title="Fruto del Espíritu - Devocionales y reflexiones cristianas" />
             <MainLayout>
                 <HeaderNoBtn
-                    title="Devocionales"
+                    title="Reflexiones"
                     paragraph="Bienaventurado el varón que no anduvo en consejo de malos, Ni estuvo en camino de pecadores, Ni en silla de escarnecedores se ha sentado; Sino que en la ley de Jehová está su delicia, Y en su ley medita de día y de noche." reference="Salmo 1 1-2"
                 />
                 <Container className="py-5">
                     <Row>
                         <Col sm={12} lg={8}>
                             <div className="d-flex align-items-center justify-content-between flex-wrap">
-                                <h2>Temas Devocionales</h2>
-                                <Input type="text" aria-label="Buscar" onChange={handleBuscar} placeholder="Buscar Devocionales" />
+                                <h3 className="mx-auto">Elige una reflexión</h3>
+                                <Input type="text" aria-label="Buscar" onChange={handleBuscar} placeholder="Busca un tema de interés" />
                             </div>
 
                             {devocionales.map(devocional => {
@@ -83,7 +85,7 @@ const DevocionalesPage = () => {
                                         className="text-decoration-none"
                                         to={`/post/${devocional.title}`}
                                     >
-                                        <h3>{devocional.title}</h3>
+                                        <h4>{devocional.title}</h4>
                                         <div className="d-flex text-dark">
                                             <div className="d-flex align-items-center mr-3">
                                                 <FaUser className="mr-2" />
