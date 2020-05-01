@@ -46,15 +46,6 @@ const StartReading = () => {
                             >Estudios Bíblicos
                             
                         </Link>
-                        <Link 
-                            className="bg-primary p-2 rounded text-light mx-2 my-2 text-center" 
-                            to="/noticias"
-                            data-sal="slide-up"
-                            data-sal-delay="400"
-                            data-sal-easing="ease"
-                            >Noticias Cristianas
-                            
-                        </Link>
                     </Col>
                 </Row>
             </Container>

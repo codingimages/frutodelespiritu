@@ -19,10 +19,6 @@ const Categories = () => {
                     variant="link"
                     className="text-uppercase p-0 mb-3 text-left"
                     href="/estudios">Estudios</Button>
-                <Button
-                    variant="link"
-                    className="text-uppercase p-0 mb-3 text-left"
-                    href="/noticias">Noticias</Button>
             </div>
         </>
     )

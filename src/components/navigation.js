@@ -60,14 +60,6 @@ const Navigation = () => {
                             Reflexiones
                         </Link>
 
-                        {/* <Link
-                            className="nav-link my-3 ml-1 mr-3 mx-auto"
-                            activeClassName="active"
-                            to="/noticias">
-                            <FaNewspaper className="mr-1" />
-                            Noticias
-                        </Link> */}
-
                         <Link
                             className="nav-link my-3 ml-1 mr-3 mx-auto"
                             activeClassName="active"

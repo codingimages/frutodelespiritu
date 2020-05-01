@@ -5,7 +5,7 @@ import Moment from "react-moment"
 import 'moment/locale/es';
 
 // components
-import HeaderBtn from "../components/HeaderBtn"
+import HeaderNoBtn from "../components/HeaderNoBtn"
 import useTodos from "../hooks/useTodos"
 import { FaUser, FaClock } from "react-icons/fa"
 import Categories from "../components/categories"
@@ -62,12 +62,10 @@ const TodosPages = () => {
         <>
             <MetaTags title="Fruto del Espíritu - Reflexiones y Estudios Bíblicos" />
             <MainLayout>
-                <HeaderBtn
+                <HeaderNoBtn
                     title="Devocionales y Estudios"
                     paragraph="Escudriñad las Escrituras; porque a vosotros os parece que en ellas tenéis la vida eterna; y ellas son las que dan testimonio de mí; y no queréis venir a mí para que tengáis vida. Gloria de los hombres no recibo."
                     reference="Juan 5.39-41"
-                    btntxt="Noticias Cristianas"
-                    btnref="/noticias"
                 />
 
                 <MailSignUp />
