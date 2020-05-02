@@ -1,5 +1,7 @@
 import React from 'react'
 
+import SocialShareComponent from "../components/SocialShareComponent"
+
 // components
 import MainLayout from "../layouts/mainLayout"
 import MetaTags from "../components/metaTags"
@@ -73,7 +75,7 @@ const EntradaPlantilla = ({ data }) => {
                                 `}
                                 dangerouslySetInnerHTML={{ __html: entrada.content }}>
                             </div>
-
+                            <SocialShareComponent />
                         </Col>
 
                         <Col sm={12} lg={4}>

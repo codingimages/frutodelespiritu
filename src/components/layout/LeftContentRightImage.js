@@ -11,6 +11,7 @@ const LeftImageRightContent = ({ image, about, header, information, btntxt, btnl
             <Container>
                 <Row>
                     <Col
+                        className="my-auto"
                         xs={12}
                         md={8}
                         data-sal="slide-up"

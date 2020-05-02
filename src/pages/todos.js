@@ -11,6 +11,7 @@ import { FaUser, FaClock } from "react-icons/fa"
 import Categories from "../components/categories"
 import MailSignUp from "../components/MailSignUp"
 import RecentPosts from "../components/recentPosts"
+import SocialShareComponent from "../components/SocialShareComponent"
 
 // bootstrap components
 import Container from "react-bootstrap/Container"
@@ -25,6 +26,8 @@ import styled from "@emotion/styled"
 
 const Input = styled.input`
     height: calc(1.5em + .75rem + 1.5px);
+    width: 75%;
+    margin: 0 auto 1rem;
     padding: .375rem .75rem;
     border: 1px solid #ced4da;
     border-radius: .25rem;
@@ -73,7 +76,7 @@ const TodosPages = () => {
                     <Row>
                         <Col sm={12} lg={8}>
                             <div className="d-flex align-items-center justify-content-between flex-wrap">
-                                <h2>Todas las entradas</h2>
+                                <h4 className="mx-auto">Todas las entradas</h4>
                                 <Input type="text" aria-label="Buscar" onChange={handleBuscar} placeholder="Buscar Escritos" />
                             </div>
                             {todos.map(post => {
@@ -108,7 +111,7 @@ const TodosPages = () => {
                                     </Link>
                                 </div>
                             })}
-
+                            <SocialShareComponent />
                         </Col>
                         <Col xs={12} lg={4}>
                             <Categories />

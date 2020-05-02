@@ -12,6 +12,7 @@ import { FaUser, FaClock } from "react-icons/fa"
 import Categories from "../components/categories"
 import MailSignUp from "../components/MailSignUp"
 import RecentPosts from "../components/recentPosts"
+import SocialShareComponent from "../components/SocialShareComponent"
 
 // bootstrap components
 import Container from "react-bootstrap/Container"
@@ -101,7 +102,7 @@ const DevocionalesPage = () => {
                                     </Link>
                                 </div>
                             })}
-
+                            <SocialShareComponent />
                         </Col>
                         <Col xs={12} lg={4}>
                             <Categories />

@@ -20,7 +20,7 @@ const StartReading = () => {
                     </Col>
                     <Col className="d-flex align-items-center justify-content-center flex-wrap" xs={12}>
                         <Link 
-                            className="bg-primary p-2 rounded text-light mx-2 my-2 text-center" 
+                            className="w-50 bg-primary p-2 rounded text-light mx-2 my-2 text-center" 
                             to="/jesus"
                             data-sal="slide-up"
                             data-sal-delay="100"
@@ -29,7 +29,7 @@ const StartReading = () => {
                             
                         </Link>
                         <Link 
-                            className="bg-primary p-2 rounded text-light mx-2 my-2 text-center" 
+                            className="w-50 bg-primary p-2 rounded text-light mx-2 my-2 text-center" 
                             to="/devocionales"
                             data-sal="slide-up"
                             data-sal-delay="200"
@@ -38,12 +38,22 @@ const StartReading = () => {
                             
                         </Link>
                         <Link 
-                            className="bg-primary p-2 rounded text-light mx-2 my-2 text-center" 
+                            className="w-50 bg-primary p-2 rounded text-light mx-2 my-2 text-center" 
                             to="/estudios"
                             data-sal="slide-up"
                             data-sal-delay="300"
                             data-sal-easing="ease"
                             >Estudios Bíblicos
+                            
+                        </Link>
+
+                        <Link 
+                            className="w-50 bg-primary p-2 rounded text-light mx-2 my-2 text-center" 
+                            to="/todos"
+                            data-sal="slide-up"
+                            data-sal-delay="400"
+                            data-sal-easing="ease"
+                            >Todo
                             
                         </Link>
                     </Col>

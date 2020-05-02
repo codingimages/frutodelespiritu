@@ -6,6 +6,7 @@ import MetaTags from "../components/metaTags"
 // components
 import MainLayout from "../layouts/mainLayout"
 import HeaderNoBtn from "../components/HeaderNoBtn"
+import SocialShareComponent from "../components/SocialShareComponent"
 
 // bootstrap components
 import Container from "react-bootstrap/Container"
@@ -108,6 +109,7 @@ class FormikCloudForm extends React.Component {
                                 Enviar
                             </Button>
                         </Form>
+                        <SocialShareComponent />
                     </Container>
                 </MainLayout>
             </>

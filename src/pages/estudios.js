@@ -11,6 +11,7 @@ import { FaUser, FaClock } from "react-icons/fa"
 import Categories from "../components/categories"
 import MailSignUp from "../components/MailSignUp"
 import RecentPosts from "../components/recentPosts"
+import SocialShareComponent from "../components/SocialShareComponent"
 
 // bootstrap components
 import Container from "react-bootstrap/Container"
@@ -82,7 +83,7 @@ const EstudiosPage = () => {
                                         className="text-decoration-none"
                                         to={`/post/${post.title}`}
                                     >
-                                        <h3>{post.title}</h3>
+                                        <h4>{post.title}</h4>
                                         <div className="d-flex text-dark">
                                             <div className="post-info d-flex align-items-center mr-3">
                                                 <FaUser className="mr-2" />
@@ -98,7 +99,7 @@ const EstudiosPage = () => {
                                     </Link>
                                 </div>
                             })}
-
+                            <SocialShareComponent />
                         </Col>
                         <Col xs={12} lg={4}>
                             <Categories />

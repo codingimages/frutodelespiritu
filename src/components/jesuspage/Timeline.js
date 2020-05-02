@@ -82,6 +82,25 @@ const TimeLine = () => {
                         eventDescription="Cuando Jesús se entera de que Juan estaba preso, comienza a predicar, escoge a Sus discípulos y su ministerio crece porque le seguía mucha gente."
                         eventReference="Mateo 4 17"
                     />
+                    <TimeLineEvent
+                        eventOrder="13"
+                        eventTitle="Jesús realiza su primer milagro"
+                        eventDescription="Según el evangelio de Juan, el primer milagro registrado fue en las bodas de Canán, donde Jesús convierte el agua en vino."
+                        eventReference="Juan 2"
+                    />
+                    <TimeLineEvent
+                        eventOrder="14"
+                        eventTitle="Jesús purifica el templo de mercaderes"
+                        eventDescription="Cuando Jesús halla mercaderes en el templo se enfurece de gran manera haciendo énfasis en no hacer la casa del Padre casa de mercadeo."
+                        eventReference="Juan 2 13"
+                    />
+
+                    <TimeLineEvent
+                        eventOrder="15"
+                        eventTitle="Jesús purifica el templo de mercaderes"
+                        eventDescription="Cuando Jesús halla mercaderes en el templo se enfurece de gran manera haciendo énfasis en no hacer la casa del Padre casa de mercadeo."
+                        eventReference="Juan 2 13"
+                    />
                 </Row>
             </Container>
         </Container >

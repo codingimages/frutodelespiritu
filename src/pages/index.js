@@ -7,6 +7,7 @@ import MailSignUp from "../components/MailSignUp"
 import StartReading from "../components/layout/StartReading"
 import LeftImageRightContent from "../components/layout/LeftImageRightContent"
 import LeftContentRightImage from "../components/layout/LeftContentRightImage"
+import SocialShareComponent from "../components/SocialShareComponent"
 
 // image components
 import BibleHeartImage from "../components/images/bibleHeartImage"
@@ -15,7 +16,7 @@ import DevocionalesImage from "../components/images/devocionalesImage"
 
 // layout
 import MainLayout from "../layouts/mainLayout"
-
+import Container from "react-bootstrap/Container"
 
 
 class IndexPage extends Component{
@@ -55,6 +56,9 @@ class IndexPage extends Component{
             btnlink="/devocionales"
             btntxt="Aprende más"
           />
+          <Container>
+          <SocialShareComponent/>
+          </Container>
           </MainLayout>
         </>
       );
