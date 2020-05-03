@@ -1,9 +1,12 @@
 import React from "react"
 
+import ErrorPageComponent from "../components/ErrorPageComponent"
+import MainLayout from "../layouts/mainLayout"
+
 const NotFoundPage = () => (
-  <>
-    <h1>Not found</h1>
-  </>
+  <MainLayout>
+    <ErrorPageComponent />
+  </MainLayout>
 )
 
 export default NotFoundPage

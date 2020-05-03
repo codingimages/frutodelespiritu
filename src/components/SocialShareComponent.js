@@ -10,13 +10,12 @@ import {
     EmailShareButton,
     FacebookShareButton,
     LinkedinShareButton,
-    PinterestShareButton,
     TwitterShareButton,
     WhatsappShareButton,
 } from "react-share";
 
 // fontawesome icons
-import { FaFacebookF, FaEnvelope, FaLinkedinIn, FaPinterestP, FaTwitter, FaWhatsapp } from "react-icons/fa"
+import { FaFacebookF, FaEnvelope, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa"
 
 // define url for build and development
 const url = typeof window !== 'undefined' ? window.location.href : ''
@@ -50,14 +49,6 @@ const SocialShareComponent = () => {
                             style={{ color: "#1DA1F2" }}
                         />
                     </TwitterShareButton>
-                </Col>
-
-                <Col>
-                    <PinterestShareButton className="w-100" url={url}>
-                        <FaPinterestP
-                            style={{ color: "#BD081C" }}
-                        />
-                    </PinterestShareButton>
                 </Col>
 
                 <Col>

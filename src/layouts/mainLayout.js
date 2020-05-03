@@ -7,6 +7,8 @@ import Button from "react-bootstrap/Button"
 import { FaAngleUp } from "react-icons/fa"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
+import SocialFollowComponent from "../components/SocialFollowComponent"
+
 import "../components/css/bootstrap.css"
 
 
@@ -27,6 +29,7 @@ const MainLayout = ({ children }) => {
                         data-sal-easing="ease"
                     />
                 </Button>
+                <SocialFollowComponent />
                 <NavigationBar />
                 {children}
                 <Footer />

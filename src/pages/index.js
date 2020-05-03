@@ -57,11 +57,11 @@ class IndexPage extends Component{
             btntxt="Aprende más"
           />
           <Container>
-          <SocialShareComponent/>
+            <SocialShareComponent/>
           </Container>
           </MainLayout>
         </>
-      );
+      )
   }
 }
 

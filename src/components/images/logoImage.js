@@ -30,8 +30,8 @@ const Logo = () => {
   const logoImage = data.placeholderImage.childImageSharp.fixed
 
   return <Img css={css`
-    width: 2rem;
-    height: 2rem;
+    width: 5rem;
+    height: 5rem;
   `}
     fluid={logoImage} />
 }
