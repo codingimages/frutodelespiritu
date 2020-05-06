@@ -11,11 +11,12 @@ const LeftImageRightContent = ({ image, about, header, information, btnlink, btn
             <Container>
                 <Row>
                     <Col
+                        className="my-auto"
                         xs={12} md={4}
                         data-sal="slide-up"
                         data-sal-easing="ease"
                     >
-                        <div className="w-100 my-auto  py-3">
+                        <div className="w-100 my-auto py-3">
                             {image}
                         </div>
                     </Col>
