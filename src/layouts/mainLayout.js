@@ -20,7 +20,7 @@ const MainLayout = ({ children }) => {
             <Container style={{ position: "relative" }} id="top" className="p-0" fluid>
                 {/* Back to top button */}
                 <Button
-                    style={{ position: "fixed", bottom: 16, right: 16 }} onClick={() => scrollTo("#top")}
+                    style={{ position: "fixed", bottom: 16, right: 16, zIndex: "99999" }} onClick={() => scrollTo("#top")}
                     data-sal="slide-left"
                     data-sal-easing="ease"
                 >
