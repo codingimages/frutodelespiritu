@@ -21,7 +21,11 @@ import RecentPosts from "../components/recentPosts"
 const JesusPage = () => {
     return (
         <>
-            <MetaTags title="Fruto del Espíritu - Cronología sobre la vida de Jesús" />
+            <MetaTags
+                title="Fruto del Espíritu - Cronología sobre la vida de Jesús"
+                description="Aprende sobre la vida de Jesús, un ser maravilloso que entregó su vida a causa de la justicia y el amor de Dios."
+                keywords="Aprende sobre la vida de Jesús, la vida de Jesús, la vida de jesus, cronología de la vida de jesús"
+            />
             <MainLayout>
                 <HeaderNoBtn
                     title="¿Quién era Jesús?"

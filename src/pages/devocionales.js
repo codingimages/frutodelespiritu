@@ -64,7 +64,11 @@ const DevocionalesPage = () => {
 
     return (
         <>
-            <MetaTags title="Fruto del Espíritu - Devocionales y reflexiones cristianas" />
+            <MetaTags
+                title="Fruto del Espíritu - Devocionales y reflexiones cristianas"
+                description="Reflexiones sobre la biblia, la palabra de Dios con preguntas y oraciones guías."
+                keywords="reflexiones de la biblia, reflexiones de la palabra de Dios, reflexiones espirituales."
+            />
             <MainLayout>
                 <HeaderNoBtn
                     title="Reflexiones"

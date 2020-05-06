@@ -24,7 +24,11 @@ class IndexPage extends Component{
   render(){
     return(
         <>
-          <MetaTags title="Fruto del Espíritu - Bienvenidos" />
+          <MetaTags 
+            title="Fruto del Espíritu - Aprende sobre la vida de Jesús, reflexiones y estudios bíblicos.  Ejercita tu fe."
+            description="Fruto del Espíritu es un ministerio en línea cuya misión es enseñar la palabra de Dios, ayudarte a entenderla y ejercitar la fe que agrada a Dios."
+            keywords="Fruto del Espíritu, fruto del espiritu, el fruto del espiritu, los frutos del espiritu, aprende la biblia"
+          />
           <MainLayout>
           <HeaderBtn
             title="¡Jesucristo Vive y Reina!" 

@@ -61,7 +61,11 @@ const EstudiosPage = () => {
 
     return (
         <>
-            <MetaTags title="Fruto del Espíritu - Estudios bíblicos a tu alcance" />
+            <MetaTags
+                title="Fruto del Espíritu - Estudios bíblicos a tu alcance"
+                description="Estudios bíblicos gratis, aprende temas de las sagradas escrituras para tu crecimiento espritual."
+                keywords="Estudios biblicos, clases biblicas, estudios biblicos gratis"
+            />
             <MainLayout>
                 <HeaderNoBtn
                     title="Estudios Bíblicos"

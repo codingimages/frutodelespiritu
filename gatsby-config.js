@@ -3,10 +3,12 @@ const path = require(`path`)
 module.exports = {
   siteMetadata: {
     title: `Fruto del Espíritu`,
-    description: `Estudios Bíblicos gratis, reflexiones, la vida de Jesús y Su ministerio.  Aprende sobre el cristianismo.`,
-    author: `@codingimages`,
+    description: `Fruto del Espíritu es un ministerio en línea cuya misión es enseñar la palabra de Dios, ayudarte a entenderla y ejercitar la fe que agrada a Dios.`,
+    author: `Reynaldo Navedo`,
+    siteUrl: `https://frutodelespiritu.netlify.app/`
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-smoothscroll`,
     {
@@ -71,7 +73,61 @@ module.exports = {
         enterEventName: 'sal:in', // Enter event name
         exitEventName: 'sal:out', // Exit event name
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({
+              query: {
+                site, wpgraphql
+              } }) => {
+              return wpgraphql.posts.nodes.map(edge => {
+                return Object.assign({}, edge, {
+                  description: edge.excerpt,
+                  date: edge.date,
+                  url: site.siteMetadata.siteUrl + "/post/" + edge.title,
+                })
+              })
+            },
+            query: `
+            {
+              wpgraphql {
+                posts(where: {categoryId: 2}, last: 5) {
+                  nodes {
+                    excerpt
+                    slug
+                    date
+                    title
+                  }
+                }
+              }
+            }
+            `,
+            output: "/rss.xml",
+            title: "Fruto de Espíritu RSS Feed",
+            // optional configuration to insert feed reference in pages:
+            // if `string` is used, it will be used to create RegExp and then test if pathname of
+            // current page satisfied this regular expression;
+            // if not provided or `undefined`, all pages will have feed reference inserted
+            match: "^/todos/",
+          },
+        ],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

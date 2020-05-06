@@ -170,6 +170,42 @@ const TimeLine = () => {
                         eventDescription="Cuando le cuestionan a Jesús, por qué sus discípulos no ayunaban, Jesús les da entender que no era necesario porque andaban con el poder de Dios, una vez este les sea removido, entonces sería necesario ayunar para que el poder de Dios descienda sobre ellos."
                         eventReference="Marcos 2 13"
                     />
+
+                    <TimeLineEvent
+                        eventOrder="27"
+                        eventTitle="Jesús sana en día de reposo"
+                        eventDescription="Durante un día de reposo, Jesús sana un hombre hidrópico y los líderes judíos se enojaron en el."
+                        eventReference="Lucas 14"
+                    />
+
+                    <TimeLineEvent
+                        eventOrder="28"
+                        eventTitle="Los principales sacerdotes y escribas traman destruir a Jesús"
+                        eventDescription="Molestos y celosos por lo que Jesús estaba haciendo, por proclamarse hijo de Dios y otras cosas que se sitieron provocados comienzan a planear la muerte de Jesús."
+                        eventReference="Lucas 14"
+                    />
+
+                    <TimeLineEvent
+                        eventOrder="29"
+                        eventTitle="Los discípulos recogen espigas en el día de reposo"
+                        eventDescription="En otro acto desafiante a la autoridad, Jesús y sus discípulos enviaban un mensaje de no hay nada malo en hacer el bien durante el día de reposo."
+                        eventReference="Marcos 2 23"
+                    />
+
+                    <TimeLineEvent
+                        eventOrder="30"
+                        eventTitle="La elección de los 12"
+                        eventDescription="Estando en el monto, llamó a los que quizo y estos vinieron a él, establece doce para que salieran a predicar y les dió la autoridad para sanar enfermos y echar fuera demonios."
+                        eventReference="Marcos 3 13"
+                    />
+
+                    <TimeLineEvent
+                        eventOrder="31"
+                        eventTitle="Continúa en desarrollo"
+                        eventDescription="Esta sección continúa en desarrollo.  Regresa pronto"
+                        eventReference="Continuará..."
+                    />
+
                 </Row>
             </Container>
         </Container >

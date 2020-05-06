@@ -63,7 +63,11 @@ const TodosPages = () => {
 
     return (
         <>
-            <MetaTags title="Fruto del Espíritu - Reflexiones y Estudios Bíblicos" />
+            <MetaTags
+                title="Fruto del Espíritu - Reflexiones y Estudios Bíblicos"
+                description="Escritos sobre la biblia, refleiones y estudio bíblicos en un solo lugar para tu aprendizaje y crecimiento espiritual."
+                keywords="Aprende biblia, aprende sobre la palabra de Dios gratis, biblia gratis, palabra de Dios gratis"
+            />
             <MainLayout>
                 <HeaderNoBtn
                     title="Devocionales y Estudios"
