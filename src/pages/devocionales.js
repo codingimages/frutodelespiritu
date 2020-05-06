@@ -88,7 +88,7 @@ const DevocionalesPage = () => {
                                         to={`/post/${devocional.title}`}
                                     >
                                         <h4>{devocional.title}</h4>
-                                        <div className="d-flex text-dark">
+                                        <div style={{ fontSize: 14 }} className="d-flex text-secondary">
                                             <div className="d-flex align-items-center mr-3">
                                                 <FaUser className="mr-2" />
                                                 <p className="m-0">{devocional.author}</p>

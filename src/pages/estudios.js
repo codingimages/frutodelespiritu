@@ -85,7 +85,7 @@ const EstudiosPage = () => {
                                         to={`/post/${post.title}`}
                                     >
                                         <h4>{post.title}</h4>
-                                        <div className="d-flex text-dark">
+                                        <div style={{ fontSize: 14 }} className="d-flex text-secondary">
                                             <div className="post-info d-flex align-items-center mr-3">
                                                 <FaUser className="mr-2" />
                                                 <p className="m-0">{post.author}</p>

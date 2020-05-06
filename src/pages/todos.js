@@ -96,7 +96,7 @@ const TodosPages = () => {
                                             </p>
                                             <h2>{post.title}</h2>
                                         </div>
-                                        <div className="d-flex text-dark">
+                                        <div style={{ fontSize: 14 }} className="d-flex text-secondary">
                                             <div className="d-flex align-items-center mr-3">
                                                 <FaUser className="mr-2" />
                                                 <p className="m-0">{post.author}</p>
