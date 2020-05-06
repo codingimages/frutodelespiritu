@@ -80,6 +80,7 @@ const DevocionalesPage = () => {
 
                             {devocionales.map(devocional => {
                                 return <div
+                                    key={devocional.id}
                                     className="d-flex flex-column border border-gray rounded p-2 my-3"
                                 >
                                     <Link

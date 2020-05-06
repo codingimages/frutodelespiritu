@@ -77,6 +77,7 @@ const EstudiosPage = () => {
                             </div>
                             {estudios.map(post => {
                                 return <div
+                                    key={post.id}
                                     className="d-flex flex-column border border-gray rounded p-2 my-3"
                                 >
                                     <Link
