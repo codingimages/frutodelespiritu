@@ -101,6 +101,75 @@ const TimeLine = () => {
                         eventDescription="Cuando Jesús halla mercaderes en el templo se enfurece de gran manera haciendo énfasis en no hacer la casa del Padre casa de mercadeo."
                         eventReference="Juan 2 13"
                     />
+
+                    <TimeLineEvent
+                        eventOrder="16"
+                        eventTitle="Jesús y sus discípulos bautizan"
+                        eventDescription="Aunque la biblia registra que Jesús no bautizaba, sino sus discípulos."
+                        eventReference="Juan 4 1-2"
+                    />
+
+                    <TimeLineEvent
+                        eventOrder="17"
+                        eventTitle="Jesús y la mujer samaritana"
+                        eventDescription="Samaritanos y Judíos no se llevaban entre si, mayor aún con una mujer.  Pero Jesús se detiene a ministrarle a esta mujer de la ciudad de Samaria."
+                        eventReference="Juan 4 1-2"
+                    />
+
+                    <TimeLineEvent
+                        eventOrder="18"
+                        eventTitle="Jesús predica en Galilea"
+                        eventDescription="Jesús comienza a predicar en Galilea, sana enfermos y enseña en las sinagogas.  Mucha gente de todas partes le seguía."
+                        eventReference="Mateo 4 23"
+                    />
+
+                    <TimeLineEvent
+                        eventOrder="19"
+                        eventTitle="Jesús es rechazado en Nazaret"
+                        eventDescription="Nazaret fue la tierra donde se crió y aunque la gente se asombraba de las cosas que hacía, fue rechazado.  Lo recordaban como el hijo de María y José."
+                        eventReference="Marcos 6 1"
+                    />
+
+                    <TimeLineEvent
+                        eventOrder="20"
+                        eventTitle="Jesús llega a Capernaúm"
+                        eventDescription="Jesús llega a Capernaúm, enseña con autoridad y continúa haciendo milagros."
+                        eventReference="Lucas 7"
+                    />
+                    <TimeLineEvent
+                        eventOrder="21"
+                        eventTitle="Jesús enseña desde la barca"
+                        eventDescription="Estando en la barca, atentos sus discípulos y seguidores, Jesús enseñaba y habla una de las parábolas más populares, a parábola del sembrador."
+                        eventReference="Mateo 13"
+                    />
+
+                    <TimeLineEvent
+                        eventOrder="23"
+                        eventTitle="Jesús hace una pesca milagrosa"
+                        eventDescription="Jesús entra a una barca de pescadores, entre los cuales se encontraba Pedro y les dá instrucciones para pescar, resultando en un pesca milagrosa por haber creído."
+                        eventReference="Lucas 5 1-10"
+                    />
+
+                    <TimeLineEvent
+                        eventOrder="24"
+                        eventTitle="Jesús llega a Capernaúm"
+                        eventDescription="Jesús llega a Capernaúm, enseña con autoridad y continúa haciendo milagros."
+                        eventReference="Lucas 7"
+                    />
+
+                    <TimeLineEvent
+                        eventOrder="25"
+                        eventTitle="Llamamiento de Mateo"
+                        eventDescription="Jesús ve a Leví sentado en el banco de los tributos y le ordena que le siga.  Este le sigue sin preguntas.  Leví posteriormente se conoce como el discípulo Marcos."
+                        eventReference="Marcos 2 13"
+                    />
+
+                    <TimeLineEvent
+                        eventOrder="26"
+                        eventTitle="Jesús defiende a los discípulos por no ayunar"
+                        eventDescription="Cuando le cuestionan a Jesús, por qué sus discípulos no ayunaban, Jesús les da entender que no era necesario porque andaban con el poder de Dios, una vez este les sea removido, entonces sería necesario ayunar para que el poder de Dios descienda sobre ellos."
+                        eventReference="Marcos 2 13"
+                    />
                 </Row>
             </Container>
         </Container >

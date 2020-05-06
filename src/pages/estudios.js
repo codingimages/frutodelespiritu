@@ -92,7 +92,7 @@ const EstudiosPage = () => {
                                             </div>
                                             <div className="d-flex align-items-center">
                                                 <FaClock className="mr-2" />
-                                                <p className="m-0">Publicado</p>
+                                                <p className="m-0 mr-2">Publicado</p>
                                                 <Moment fromNow>{post.date}</Moment>
                                             </div>
                                         </div>
