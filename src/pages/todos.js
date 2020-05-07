@@ -98,7 +98,7 @@ const TodosPages = () => {
                                             }}
                                                 className="text-danger mb-0">{post.categories}
                                             </p>
-                                            <h2>{post.title}</h2>
+                                            <h4>{post.title}</h4>
                                         </div>
                                         <div style={{ fontSize: 14 }} className="d-flex text-secondary">
                                             <div className="d-flex align-items-center mr-3">
