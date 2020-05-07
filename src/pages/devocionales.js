@@ -79,7 +79,7 @@ const DevocionalesPage = () => {
                         <Col sm={12} lg={8}>
                             <div className="d-flex align-items-center justify-content-between flex-wrap">
                                 <h3 className="mx-auto">Elige una reflexión</h3>
-                                <Input type="text" aria-label="Buscar" onChange={handleBuscar} placeholder="Busca un tema de interés" />
+                                <Input type="text" aria-label="Buscar" onChange={handleBuscar} placeholder="Busca reflexiones" />
                             </div>
 
                             {devocionales.map(devocional => {

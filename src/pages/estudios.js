@@ -76,8 +76,8 @@ const EstudiosPage = () => {
                         {/* Content */}
                         <Col sm={12} lg={8}>
                             <div className="d-flex align-items-center justify-content-between flex-wrap">
-                                <h2 className="mx-auto">Elige un tema</h2>
-                                <Input type="text" aria-label="Buscar" onChange={handleBuscar} placeholder="Buscar Estudios" />
+                                <h3 className="mx-auto">Elige un tema de estudio</h3>
+                                <Input type="text" aria-label="Buscar" onChange={handleBuscar} placeholder="Buscar estudios bíblicos" />
                             </div>
                             {estudios.map(post => {
                                 return <div

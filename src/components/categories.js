@@ -1,5 +1,5 @@
 import React from "react"
-import Button from "react-bootstrap/Button"
+import { Link } from "gatsby"
 
 
 const Categories = () => {
@@ -7,18 +7,21 @@ const Categories = () => {
         <>
             <h2 className="mb-3">Categorías</h2>
             <div className="d-flex flex-column">
-                <Button
+                <Link
                     variant="link"
+                    activeClassName="active"
                     className="text-uppercase p-0 mb-3 text-left"
-                    href="/todos">Todos</Button>
-                <Button
+                    to="/todos">Todos</Link>
+                <Link
                     variant="link"
+                    activeClassName="active"
                     className="text-uppercase p-0 mb-3 text-left"
-                    href="/devocionales">Devocionales</Button>
-                <Button
+                    to="/devocionales">Reflexiones</Link>
+                <Link
                     variant="link"
+                    activeClassName="active"
                     className="text-uppercase p-0 mb-3 text-left"
-                    href="/estudios">Estudios</Button>
+                    to="/estudios">Estudios</Link>
             </div>
         </>
     )
