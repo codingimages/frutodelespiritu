@@ -96,7 +96,7 @@ const TodosPages = () => {
                                             <p style={{
                                                 fontSize: 12
                                             }}
-                                                className="mb-1 bg-primary text-light p-2 rounded">{post.categories}
+                                                className="text-danger mb-0">{post.categories}
                                             </p>
                                             <h2>{post.title}</h2>
                                         </div>
