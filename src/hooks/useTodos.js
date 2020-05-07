@@ -2,7 +2,7 @@ import { graphql, useStaticQuery } from "gatsby"
 
 const useTodos = () => {
 
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     {
         wpgraphql {
           posts{
@@ -26,15 +26,15 @@ const useTodos = () => {
       }
     `)
 
-    return data.wpgraphql.posts.nodes.map(todos => ({
-        id: todos.id,
-        slug: todos.slug,
-        author: todos.author.name,
-        date: todos.date,
-        categories: todos.categories.nodes[0].slug,
-        title: todos.title,
-        excerpt: todos.excerpt.substr(0, 125) + ` . . .`
-    }))
+  return data.wpgraphql.posts.nodes.map(todos => ({
+    id: todos.id,
+    slug: todos.slug,
+    author: todos.author.name,
+    date: todos.date,
+    categories: todos.categories.nodes[0].slug,
+    title: todos.title,
+    excerpt: todos.excerpt
+  }))
 }
 
 export default useTodos
