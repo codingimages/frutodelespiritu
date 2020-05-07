@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button"
 const Categories = () => {
     return (
         <>
-            <h2>Categorías</h2>
+            <h2 className="mb-3">Categorías</h2>
             <div className="d-flex flex-column">
                 <Button
                     variant="link"
