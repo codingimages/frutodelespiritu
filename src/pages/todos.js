@@ -105,7 +105,7 @@ const TodosPages = () => {
                                                 <FaUser className="mr-2" />
                                                 <p className="m-0">{post.author}</p>
                                             </div>
-                                            <div className="d-flex align-items-center">
+                                            <div className="d-flex  align-items-center">
                                                 <FaClock className="mr-2" />
                                                 <p className="m-0 mr-1">Publicado</p>
                                                 <Moment fromNow>{post.date}</Moment>
