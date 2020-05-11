@@ -6,12 +6,12 @@ import useRecentPosts from "../hooks/useRecentPosts"
 
 const RecentPosts = () => {
 
-    const recentPosts = useRecentPosts()
+    const recentPost = useRecentPosts()
 
     return (
         <div className="mt-5">
             <h2 className="mb-3">Entradas Recientes</h2>
-            {recentPosts.map(post => {
+            {recentPost.map(post => {
                 return <Link
                     key={post.id}
                     className="d-flex align-items-center mb-3"

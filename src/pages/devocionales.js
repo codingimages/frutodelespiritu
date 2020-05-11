@@ -1,5 +1,5 @@
 import React from "react"
-import MetaTags from "../components/metaTags"
+import MetaTags from "../components/MetaTags"
 import { Link } from "gatsby"
 import Moment from "react-moment"
 import 'moment/locale/es';
@@ -9,9 +9,9 @@ import 'moment/locale/es';
 import HeaderNoBtn from "../components/HeaderNoBtn"
 import useDevocionales from "../hooks/useDevocionales"
 import { FaUser, FaClock } from "react-icons/fa"
-import Categories from "../components/categories"
+import PostCategories from "../components/Categories"
 import MailSignUp from "../components/MailSignUp"
-import RecentPosts from "../components/recentPosts"
+import RecentPosts from "../components/RecentPosts"
 import SocialShareComponent from "../components/SocialShareComponent"
 
 // bootstrap components
@@ -20,7 +20,7 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
 // layout
-import MainLayout from "../layouts/mainLayout"
+import MainLayout from "../components/layout/MainLayout"
 
 // style
 import styled from "@emotion/styled"
@@ -110,7 +110,7 @@ const DevocionalesPage = () => {
                             <SocialShareComponent />
                         </Col>
                         <Col xs={12} lg={4}>
-                            <Categories />
+                            <PostCategories />
                             <RecentPosts />
                         </Col>
                     </Row>

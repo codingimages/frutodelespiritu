@@ -1,10 +1,10 @@
 import React from "react"
 
 // meta tags
-import MetaTags from "../components/metaTags"
+import MetaTags from "../components/MetaTags"
 
 // components
-import MainLayout from "../layouts/mainLayout"
+import MainLayout from "../components/layout/MainLayout"
 import HeaderNoBtn from "../components/HeaderNoBtn"
 
 // bootstrap components

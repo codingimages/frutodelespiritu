@@ -7,19 +7,19 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
 // Logo
-import LogoImage from "../components/images/logoImage"
+import LogoImage from "./images/logoImage"
 
 const Footer = () => {
     const currYear = new Date().getFullYear()
     console.log(currYear)
     return (
         <Container fluid className="bg-dark text-light p-3">
-            <Container className="d-flex align-items-center justify-content-center pb-3">
-                <LogoImage />
-            </Container>
             <Container>
-                <Row>
-                    <Col className="mb-3" xs={12} md={6}>
+                <Row className="py-5">
+                    <Col className="my-3" xs={12} md={4}>
+                        <LogoImage />
+                    </Col>
+                    <Col className="my-3" xs={12} md={4}>
                         <h5>Enlaces</h5>
                         <ul className="pl-1" style={{ listStyle: "none" }}>
                             <li><Link to="/preguntas">Jesús</Link></li>
@@ -29,7 +29,7 @@ const Footer = () => {
                         </ul>
                     </Col>
 
-                    <Col className="mb-3" xs={12} md={6}>
+                    <Col className="my-3" xs={12} md={4}>
                         <h5>Contacto y seguridad</h5>
                         <ul className="pl-1" style={{ listStyle: "none" }}>
                             <li><Link to="/preguntas">Contacto</Link></li>

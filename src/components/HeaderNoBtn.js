@@ -12,7 +12,7 @@ const Header = ({ title, paragraph, reference }) => {
             <Container>
                 <h1>{title}</h1>
                 <p className="lead">{paragraph}</p>
-                <p>{reference}</p>
+                <p className="font-weight-bold">{reference}</p>
             </Container>
         </Jumbotron>
     )

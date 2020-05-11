@@ -1,5 +1,5 @@
 import React, {Component}from "react"
-import MetaTags from "../components/metaTags"
+import MetaTags from "../components/MetaTags"
 
 // components
 import HeaderBtn from "../components/HeaderBtn"
@@ -15,7 +15,7 @@ import EstudiosImage from "../components/images/estudiosImage"
 import DevocionalesImage from "../components/images/devocionalesImage"
 
 // layout
-import MainLayout from "../layouts/mainLayout"
+import MainLayout from "../components/layout/MainLayout"
 import Container from "react-bootstrap/Container"
 
 

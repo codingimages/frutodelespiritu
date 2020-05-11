@@ -16,15 +16,15 @@ const Navigation = () => {
     return (
         <Navbar bg="primary" variant="dark" expand="lg">
             <Container>
-                <Navbar.Brand href="/" activeClassName="active">
+                <Navbar.Brand href="/" activeClassName="active" className="d-flex align-items-center justify-content-start">
                     <img
                         alt="logo del sitio"
                         src={Logo}
-                        width="30"
-                        height="30"
-                        className="d-inline-block align-top"
+                        width="40"
+                        height="40"
+                        className="mr-1"
                     />{' '}
-                        Fruto del Espíritu
+                    <p className="mb-0">Fruto del Espíritu</p>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

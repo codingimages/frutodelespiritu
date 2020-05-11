@@ -13,7 +13,7 @@ const Header = ({ title, paragraph, reference, btnref, btntxt }) => {
             <Container>
                 <h1>{title}</h1>
                 <p className="lead">{paragraph}</p>
-                <p>{reference}</p>
+                <p className="font-weight-bold">{reference}</p>
                 <Link className="btn btn-danger" to={btnref} variant="danger">{btntxt}</Link>
             </Container>
         </Jumbotron>

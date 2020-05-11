@@ -17,7 +17,7 @@ import { css } from "@emotion/core"
 const Logo = () => {
   const data = useStaticQuery(graphql`
   {
-    placeholderImage: file(relativePath: { eq: "logo.png" }) {
+    placeholderImage: file(relativePath: { eq: "logo-letters.png" }) {
       childImageSharp {
         fixed{
           ...GatsbyImageSharpFixed
@@ -30,8 +30,9 @@ const Logo = () => {
   const logoImage = data.placeholderImage.childImageSharp.fixed
 
   return <Img css={css`
-    width: 5rem;
-    height: 5rem;
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
   `}
     fluid={logoImage} />
 }

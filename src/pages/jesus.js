@@ -2,11 +2,11 @@ import React from "react"
 
 // components
 import HeaderNoBtn from "../components/HeaderNoBtn"
-import MetaTags from "../components/metaTags"
+import MetaTags from "../components/MetaTags"
 import Timeline from "../components/jesuspage/Timeline"
 
 // layout
-import MainLayout from "../layouts/mainLayout"
+import MainLayout from "../components/layout/MainLayout"
 import Introduction from "../components/jesuspage/Introduction"
 
 // bootstrap components
@@ -15,8 +15,8 @@ import Col from "react-bootstrap/Col"
 import Container from "react-bootstrap/Container"
 
 // components
-import Categories from "../components/categories"
-import RecentPosts from "../components/recentPosts"
+import PostCategories from "../components/Categories"
+import RecentPosts from "../components/RecentPosts"
 
 const JesusPage = () => {
     return (
@@ -39,7 +39,7 @@ const JesusPage = () => {
                             <Timeline />
                         </Col>
                         <Col xs={12} lg={4}>
-                            <Categories />
+                            <PostCategories />
                             <RecentPosts />
                         </Col>
                     </Row>

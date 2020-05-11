@@ -1,15 +1,17 @@
 import React from "react"
-
-import NavigationBar from "../components/navigation"
-import Container from "react-bootstrap/Container"
-import Footer from "../components/footer"
-import Button from "react-bootstrap/Button"
-import { FaAngleUp } from "react-icons/fa"
 import scrollTo from "gatsby-plugin-smoothscroll"
+import { FaAngleUp } from "react-icons/fa"
 
-import SocialFollowComponent from "../components/SocialFollowComponent"
+// Components
+import NavigationBar from "../Navigation"
+import Footer from "../Footer"
+import SocialFollowComponent from "../SocialFollowComponent"
 
-import "../components/css/bootstrap.css"
+// Bootstrap Components
+import Container from "react-bootstrap/Container"
+import Button from "react-bootstrap/Button"
+
+import "../css/bootstrap.css"
 
 
 // Components

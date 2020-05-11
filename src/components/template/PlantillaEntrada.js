@@ -1,22 +1,18 @@
 import React from 'react'
 
-import SocialShareComponent from "../components/SocialShareComponent"
-
 // components
-import MainLayout from "../layouts/mainLayout"
-import MetaTags from "../components/metaTags"
-import Categories from "../components/categories"
-import RecentPosts from "../components/recentPosts"
+import MainLayout from "../layout/MainLayout"
+import MetaTags from "../MetaTags"
+import PostCategories from "../Categories"
+import RecentPosts from "../RecentPosts"
+import MailSignUp from "../MailSignUp"
+import HeaderPost from "../HeaderPosts"
+import SocialShareComponent from "../SocialShareComponent"
 
 // bootstrap components
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-
-
-// components
-import MailSignUp from "../components/MailSignUp"
-import HeaderPost from "../components/headerPosts"
 
 
 // styles
@@ -79,7 +75,7 @@ const EntradaPlantilla = ({ data }) => {
                         </Col>
 
                         <Col sm={12} lg={4}>
-                            <Categories />
+                            <PostCategories />
                             <RecentPosts />
                         </Col>
                     </Row>
