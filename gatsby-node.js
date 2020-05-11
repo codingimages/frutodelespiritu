@@ -24,7 +24,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
     actions.createPage({
       path: `/post/${entrada.title}`,
-      component: require.resolve("./src/components/template/plantillaEntrada.js"),
+      component: require.resolve("./src/components/template/PlantillaEntrada.js"),
       context: {
         title: entrada.title,
       },
