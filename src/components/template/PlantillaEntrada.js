@@ -48,7 +48,7 @@ const EntradaPlantilla = ({ data }) => {
     const entrada = data.wpgraphql.posts.nodes[0]
     return (
         <>
-            <MetaTags title={`${entrada.title} / Fruto del Espíritu - Devocionales, Estudios Bíblicos y Noticias Cristianas`} />
+            <MetaTags title={`${entrada.title} / Fruto del Espíritu - Devocionales, Estudios Bíblicos y Más`} />
             <MainLayout>
                 <HeaderPost
                     title={entrada.title}
