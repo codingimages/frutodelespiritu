@@ -34,7 +34,7 @@ const StartReading = () => {
                             data-sal="slide-up"
                             data-sal-delay="200"
                             data-sal-easing="ease"
-                            >Vida Devocional
+                            >Vida de Reflexión
                             
                         </Link>
                         <Link 
