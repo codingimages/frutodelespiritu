@@ -5,7 +5,7 @@ const useTodos = () => {
   const data = useStaticQuery(graphql`
     {
         wpgraphql {
-          posts{
+          posts(first: 200){
             nodes {
               id
               slug

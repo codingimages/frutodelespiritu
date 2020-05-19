@@ -2,7 +2,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const resultado = await graphql(`
     query {
         wpgraphql {
-          posts {
+          posts(first: 17) {
             nodes {
               title
             }
@@ -23,7 +23,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   entradas.forEach(entrada => {
 
     actions.createPage({
-      path: `/post/${entrada.title}`,
+      path: entrada.title,
       component: require.resolve("./src/components/template/PlantillaEntrada.js"),
       context: {
         title: entrada.title,

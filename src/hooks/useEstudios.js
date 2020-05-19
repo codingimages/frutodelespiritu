@@ -5,7 +5,7 @@ const useEstudios = () => {
   const data = useStaticQuery(graphql`
     {
         wpgraphql {
-          posts(where: {categoryId: 3}) {
+          posts(where: {categoryId: 3}, first: 200){
             nodes {
               id
               slug

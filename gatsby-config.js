@@ -3,9 +3,9 @@ const path = require(`path`)
 module.exports = {
   siteMetadata: {
     title: `Fruto del Espíritu`,
-    description: `Fruto del Espíritu es un ministerio en línea cuya misión es enseñar la palabra de Dios, ayudarte a entenderla y ejercitar la fe que agrada a Dios.`,
+    description: `Fruto del Espíritu es un ministerio en línea cuya misión es enseñar la palabra de Dios, ayudarte a entenderla y ejercitar la fe que le agrada a Dios.`,
     author: `Reynaldo Navedo`,
-    siteUrl: `https://frutodelespiritu.netlify.app/`
+    siteUrl: `https://frutodelespiritu.website/`
   },
   plugins: [
     `gatsby-plugin-sitemap`,
@@ -51,8 +51,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-page-progress",
       options: {
-        includePaths: [{ regex: "^/post" }],
-        excludePaths: ["/"],
+        includePaths: [{ regex: "^/" }],
         height: 3,
         prependToBody: false,
         color: `#007BFF`
@@ -99,14 +98,14 @@ module.exports = {
                 return Object.assign({}, edge, {
                   description: edge.excerpt,
                   date: edge.date,
-                  url: site.siteMetadata.siteUrl + "/post/" + edge.title,
+                  url: site.siteMetadata.siteUrl + "/" + edge.title,
                 })
               })
             },
             query: `
             {
               wpgraphql {
-                posts(where: {categoryId: 2}, last: 5) {
+                posts(first: 200){
                   nodes {
                     excerpt
                     slug

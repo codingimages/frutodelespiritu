@@ -5,7 +5,7 @@ const useRecentPosts = () => {
   const data = useStaticQuery(graphql`
     {
         wpgraphql {
-          posts(first: 5){
+          posts(first: 8){
             nodes {
               id
               slug

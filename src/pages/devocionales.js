@@ -65,7 +65,7 @@ const DevocionalesPage = () => {
     return (
         <>
             <MetaTags
-                title="Fruto del Espíritu - Devocionales y reflexiones cristianas"
+                title="Fruto del Espíritu - Reflexiones Cristianas"
                 description="Reflexiones sobre la biblia, la palabra de Dios con preguntas y oraciones guías."
                 keywords="reflexiones de la biblia, reflexiones de la palabra de Dios, reflexiones espirituales."
             />
@@ -89,7 +89,7 @@ const DevocionalesPage = () => {
                                 >
                                     <Link
                                         className="text-decoration-none"
-                                        to={`/post/${devocional.title}`}
+                                        to={devocional.title}
                                     >
                                         <h4>{devocional.title}</h4>
                                         <div style={{ fontSize: 14 }} className="d-flex text-secondary">

@@ -70,7 +70,7 @@ const TodosPages = () => {
             />
             <MainLayout>
                 <HeaderNoBtn
-                    title="Devocionales y Estudios"
+                    title="Reflexiones y Estudios"
                     paragraph="Escudriñad las Escrituras; porque a vosotros os parece que en ellas tenéis la vida eterna; y ellas son las que dan testimonio de mí; y no queréis venir a mí para que tengáis vida. Gloria de los hombres no recibo."
                     reference="Juan 5.39-41"
                 />
@@ -90,7 +90,7 @@ const TodosPages = () => {
                                 >
                                     <Link
                                         className="text-decoration-none"
-                                        to={`/post/${post.title}`}
+                                        to={post.title}
                                     >
                                         <div className="d-flex align-items-start flex-column">
                                             <p style={{
