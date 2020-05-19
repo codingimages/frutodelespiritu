@@ -2,12 +2,12 @@ import React from 'react'
 
 // components
 import MainLayout from "../layout/MainLayout"
-import MetaTags from "../MetaTags"
-import PostCategories from "../Categories"
-import RecentPosts from "../RecentPosts"
-import MailSignUp from "../MailSignUp"
-import HeaderPost from "../HeaderPosts"
-import SocialShareComponent from "../SocialShareComponent"
+import MetaTags from "../../components/MetaTags"
+import PostCategories from "../../components/Categories"
+import RecentPosts from "../../components/RecentPosts"
+import MailSignUp from "../../components/MailSignUp"
+import HeaderPost from "../../components/HeaderPosts"
+import SocialShareComponent from "../../components/SocialShareComponent"
 
 // bootstrap components
 import Container from "react-bootstrap/Container"
