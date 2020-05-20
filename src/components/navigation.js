@@ -55,7 +55,7 @@ const Navigation = () => {
                         <Link
                             className="nav-link my-3 ml-1 mr-3 mx-auto align-items-center justify-content-center d-flex align-items-center justify-content-center d-flex"
                             activeClassName="active"
-                            to="/devocionales">
+                            to="/devocionales" >
                             <FaPray className="mr-1" />
                             Reflexiones
                         </Link>
