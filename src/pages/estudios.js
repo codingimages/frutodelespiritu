@@ -8,7 +8,7 @@ import 'moment/locale/es';
 import HeaderNoBtn from "../components/HeaderNoBtn"
 import useEstudios from "../hooks/useEstudios"
 import { FaUser, FaClock } from "react-icons/fa"
-import PostCategories from "../components/Categories"
+import Categories from "../components/Categories"
 import MailSignUp from "../components/MailSignUp"
 import RecentPosts from "../components/RecentPosts"
 import SocialShareComponent from "../components/SocialShareComponent"
@@ -107,7 +107,7 @@ const EstudiosPage = () => {
                             <SocialShareComponent />
                         </Col>
                         <Col xs={12} lg={4}>
-                            <PostCategories />
+                            <Categories />
                             <RecentPosts />
                         </Col>
                     </Row>
