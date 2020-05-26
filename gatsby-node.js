@@ -2,7 +2,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const resultado = await graphql(`
     query {
         wpgraphql {
-          posts(first: 17) {
+          posts(first: 200) {
             nodes {
               title
             }

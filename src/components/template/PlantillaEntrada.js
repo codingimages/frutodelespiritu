@@ -14,6 +14,9 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
+// discuss
+import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
+
 
 // styles
 import { css } from "@emotion/core"
@@ -26,6 +29,7 @@ export const query = graphql`
         wpgraphql {
             posts(where: {title: $title}) {
                 nodes {
+                    id
                     author {
                         name
                     }
@@ -41,11 +45,24 @@ export const query = graphql`
                 }
             }
         }
+        site {
+            siteMetadata {
+              siteUrl
+            }
+          }
     }
 `
 
 const EntradaPlantilla = ({ data }) => {
+
     const entrada = data.wpgraphql.posts.nodes[0]
+
+    let disqusConfig = {
+        url: typeof window !== 'undefined' ? window.location.href : '',
+        identifier: entrada.id,
+        title: entrada.title,
+    }
+
     return (
         <>
             <MetaTags title={`${entrada.title} / Fruto del Espíritu - Devocionales, Estudios Bíblicos y Más`} />
@@ -70,6 +87,11 @@ const EntradaPlantilla = ({ data }) => {
                                     }
                                 `}
                                 dangerouslySetInnerHTML={{ __html: entrada.content }}>
+                            </div>
+                            <div className="mt-5 border p-3">
+                                <h4>Deja tu comentario y comparte</h4>
+                                <CommentCount config={disqusConfig} placeholder="Comenta" />
+                                <Disqus config={disqusConfig} />
                             </div>
                             <SocialShareComponent />
                         </Col>
