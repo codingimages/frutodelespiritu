@@ -90,7 +90,7 @@ const TodosPages = () => {
                                 >
                                     <Link
                                         className="text-decoration-none"
-                                        to={post.title}
+                                        to={`/${post.title}`}
                                     >
                                         <div className="d-flex align-items-start flex-column">
                                             <p style={{

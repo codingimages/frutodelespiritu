@@ -89,7 +89,7 @@ const DevocionalesPage = () => {
                                 >
                                     <Link
                                         className="text-decoration-none"
-                                        to={devocional.title}
+                                        to={`/${devocional.title}`}
                                     >
                                         <h4>{devocional.title}</h4>
                                         <div style={{ fontSize: 14 }} className="d-flex text-secondary">

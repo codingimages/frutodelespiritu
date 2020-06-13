@@ -86,7 +86,7 @@ const EstudiosPage = () => {
                                 >
                                     <Link
                                         className="text-decoration-none"
-                                        to={post.title}
+                                        to={`/${post.title}`}
                                     >
                                         <h4>{post.title}</h4>
                                         <div style={{ fontSize: 14 }} className="d-flex text-secondary">
