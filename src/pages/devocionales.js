@@ -1,18 +1,18 @@
 import React from "react"
-import MetaTags from "../components/MetaTags"
+import MetaTags from "../components/metaTags"
 import { Link } from "gatsby"
 import Moment from "react-moment"
 import 'moment/locale/es';
 
 
 // components
-import HeaderNoBtn from "../components/HeaderNoBtn"
+import HeaderNoBtn from "../components/headerNoBtn"
 import useDevocionales from "../hooks/useDevocionales"
 import { FaUser, FaClock } from "react-icons/fa"
-import Categories from "../components/Categories"
+import Categories from "../components/categories"
 import MailSignUp from "../components/MailSignUp"
-import RecentPosts from "../components/RecentPosts"
-import SocialShareComponent from "../components/SocialShareComponent"
+import RecentPosts from "../components/recentPosts"
+import SocialShareComponent from "../components/socialShareComponent"
 
 // bootstrap components
 import Container from "react-bootstrap/Container"
@@ -20,7 +20,7 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
 // layout
-import MainLayout from "../components/layout/MainLayout"
+import MainLayout from "../components/layout/mainLayout"
 
 // style
 import styled from "@emotion/styled"

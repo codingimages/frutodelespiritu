@@ -1,13 +1,13 @@
 import React from 'react'
 
 // components
-import MainLayout from "../layout/MainLayout"
-import MetaTags from "../MetaTags"
-import Categories from "../Categories"
-import RecentPosts from "../RecentPosts"
+import MainLayout from "../layout/mainLayout"
+import MetaTags from "../metaTags"
+import Categories from "../categories"
+import RecentPosts from "../recentPosts"
 import MailSignUp from "../MailSignUp"
-import HeaderPost from "../HeaderPosts"
-import SocialShareComponent from "../SocialShareComponent"
+import HeaderPost from "../headerPosts"
+import SocialShareComponent from "../socialShareComponent"
 
 // bootstrap components
 import Container from "react-bootstrap/Container"

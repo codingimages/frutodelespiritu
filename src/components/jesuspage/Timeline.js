@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 
 // time line component
-import TimeLineEvent from "../jesuspage/TmelineEvent"
+import TimeLineEvent from "./timelineEvent"
 
 const TimeLine = () => {
     return (

@@ -3,9 +3,9 @@ import scrollTo from "gatsby-plugin-smoothscroll"
 import { FaAngleUp } from "react-icons/fa"
 
 // Components
-import NavigationBar from "../../components/Navigation"
-import Footer from "../../components/Footer"
-import SocialFollowComponent from "../../components/SocialFollowComponent"
+import NavigationBar from "../../components/navigation"
+import Footer from "../../components/footer"
+import SocialFollowComponent from "../../components/socialFollowComponent"
 
 // Bootstrap Components
 import Container from "react-bootstrap/Container"

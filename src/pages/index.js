@@ -1,13 +1,13 @@
 import React, {Component}from "react"
-import MetaTags from "../components/MetaTags"
+import MetaTags from "../components/metaTags"
 
 // components
-import HeaderBtn from "../components/HeaderBtn"
+import HeaderBtn from "../components/headerBtn"
 import MailSignUp from "../components/MailSignUp"
-import StartReading from "../components/layout/StartReading"
-import LeftImageRightContent from "../components/layout/LeftImageRightContent"
-import LeftContentRightImage from "../components/layout/LeftContentRightImage"
-import SocialShareComponent from "../components/SocialShareComponent"
+import StartReading from "../components/layout/startReading"
+import LeftImageRightContent from "../components/layout/leftImageRightContent"
+import LeftContentRightImage from "../components/layout/leftContentRightImage"
+import SocialShareComponent from "../components/socialShareComponent"
 
 // image components
 import BibleHeartImage from "../components/images/bibleHeartImage"
@@ -15,7 +15,7 @@ import EstudiosImage from "../components/images/estudiosImage"
 import DevocionalesImage from "../components/images/devocionalesImage"
 
 // layout
-import MainLayout from "../components/layout/MainLayout"
+import MainLayout from "../components/layout/mainLayout"
 import Container from "react-bootstrap/Container"
 
 

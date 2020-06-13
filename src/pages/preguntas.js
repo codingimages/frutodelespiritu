@@ -1,12 +1,12 @@
 import React from "react"
 
 // meta tags
-import MetaTags from "../components/MetaTags"
+import MetaTags from "../components/metaTags"
 
 // components
-import MainLayout from "../components/layout/MainLayout"
-import HeaderNoBtn from "../components/HeaderNoBtn"
-import SocialShareComponent from "../components/SocialShareComponent"
+import MainLayout from "../components/layout/mainLayout"
+import HeaderNoBtn from "../components/headerNoBtn"
+import SocialShareComponent from "../components/socialShareComponent"
 
 // bootstrap components
 import Container from "react-bootstrap/Container"

@@ -1,13 +1,13 @@
 import React from "react"
 
 // components
-import HeaderNoBtn from "../components/HeaderNoBtn"
-import MetaTags from "../components/MetaTags"
-import Timeline from "../components/jesuspage/Timeline"
+import HeaderNoBtn from "../components/headerNoBtn"
+import MetaTags from "../components/metaTags"
+import Timeline from "../components/jesuspage/timeline"
 
 // layout
-import MainLayout from "../components/layout/MainLayout"
-import Introduction from "../components/jesuspage/Introduction"
+import MainLayout from "../components/layout/mainLayout"
+import Introduction from "../components/jesuspage/introduction"
 
 // bootstrap components
 import Row from "react-bootstrap/Row"
@@ -15,8 +15,8 @@ import Col from "react-bootstrap/Col"
 import Container from "react-bootstrap/Container"
 
 // components
-import PostCategories from "../components/Categories"
-import RecentPosts from "../components/RecentPosts"
+import PostCategories from "../components/categories"
+import RecentPosts from "../components/recentPosts"
 
 const JesusPage = () => {
     return (
