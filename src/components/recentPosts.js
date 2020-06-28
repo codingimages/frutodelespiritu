@@ -15,7 +15,7 @@ const RecentPosts = () => {
                 return <Link
                     key={post.id}
                     className="d-flex align-items-center mb-3"
-                    to={`/post/${post.title}`}>
+                    to={`/${post.title}`}>
                     <p className="mb-0">{post.title} <br />
                         <span className="text-secondary"><sup>{post.categories}</sup></span></p>
                 </Link>
